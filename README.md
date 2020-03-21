@@ -16,6 +16,8 @@ This api is bundled with every slider you load from slidevision and provides eas
 ##### sl8v.api.transport.next()
 ##### sl8v.api.transport.prev()
 ##### sl8v.api.transport.goto(indexFromZero=null)
+##### sl8v.api.transport.gotoId(slideId)
+
 
 ### sl8v.api.plugins
 ##### sl8v.api.plugins.get(name)
