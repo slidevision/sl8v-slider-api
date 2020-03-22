@@ -40,7 +40,8 @@ $(sl8v.api.slides()).each(function(index, slide){
 #### sl8v.api.url(input)
 * This is a proxy method to the [js-url](https://github.com/websanova/js-url) api to access url parameters.
 
-### sl8v.api.transport
+
+## sl8v.api.transport
 #### sl8v.api.transport.index()
 * Return the current slide index.
 
@@ -65,11 +66,11 @@ $(sl8v.api.slides()).each(function(index, slide){
 
 * This action will maybe not executed if an input field of the current slide has an validation error for example.
 
-### sl8v.api.plugins
+## sl8v.api.plugins
 #### sl8v.api.plugins.get(name)
 * Returns a plugin loaded from the SlideVision slider or undefined if not loaded.
 
-### sl8v.api.submission
+## sl8v.api.submission
 #### sl8v.api.submission.get(key, fallback = undefined)
 * Returns all or a certain value of the lead data that gets submitted.
 
@@ -82,7 +83,7 @@ $(sl8v.api.slides()).each(function(index, slide){
 
 * The `triggerTrackEvent` indicates if this `key` and `value` should be triggered to the configured tracking backends (Google-Tag-Manager, Facebook etc.)
 
-### sl8v.api.events
+## sl8v.api.events
 *  The event manager is a light weight but powerful event pub/sub implementation.
 
 *  An event is created by triggering a string (eventName). `before.leaving.question` for example. The event in this case is `before`, `leaving` and `question` are tags.
