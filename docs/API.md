@@ -1,9 +1,10 @@
 # sl8v-slider-api
-This api is bundled with every slider you load from slidevision and provides easy access for developer to interact with your SlideVision slider.
+This api is bundled with every slider you load from cdn.slidevision.io and provides easy access for developer to interact with your SlideVision slider.
 
 ## Initial Loading
 #### sl8v_on_before_loading()
-If the method `sl8v_on_before_loading` is defined in the context of `window` this method will be called * before the SlideVision slider gets initialized
+If the method `sl8v_on_before_loading` is defined in the context of `window` this method will be called 
+* before the SlideVision slider gets initialized
 
 #### sl8v_on_slider_ready()
 If the method `sl8v_on_slider_ready` is defined in the context of `window` this method will be called:
