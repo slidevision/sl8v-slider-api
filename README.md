@@ -8,3 +8,5 @@ If you need support with you SlideVision slider contact us via support@slidevisi
 ### Developer Resources
 * [docs/API.md](docs/API.md)
 * [docs/CHANGELOG.md](docs/CHANGELOG.md)
+
+![targetgroups](https://github.com/slidevision/sl8v-slider-api/blob/master/docs/targetgroups.png)
