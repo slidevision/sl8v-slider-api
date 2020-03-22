@@ -11,7 +11,7 @@ If the method `sl8v_on_slider_ready` is defined in the context of `window` this 
 * before the SlideVision slider shows up in the page
 
 If you want to listen by your own you can do:
-```
+```javascript
 $(document).on('ready.formslider', '.slidevision-formslider', function(){
   console.log('SlideVision slider is ready');
 });
@@ -30,7 +30,7 @@ Most the time is `$('.slidevision-formslider')`.
 This method returns object of the slides with the index as key and the div as value.
 
 You can iterate over the  slides by doing the following:
-```
+```javascript
 $(sl8v.api.slides()).each(function(index, slide){
   var slideId = $(slide).data('id');
   console.log(slideId);
