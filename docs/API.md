@@ -108,20 +108,20 @@ $(sl8v.api.slides()).each(function(index, slide){
 
 Possible pre define event names in chronoloical order:
 ```bash
-  * `ready`                         # fired when slider is ready
-  * `resize`                        # fired when page is resized
-  * `first-interaction`             # fired after first transition
-  * `leaving`                       # fired before going to the next slide, can stop transition
-  * `leaving.[currentRole]`         # currentRole it the role of the slide, a plugin can listen only listen for `leaving.zipcode`
-  * `leaving.[currentRole].next`    # same as above but only when direction forward
-  * `leaving.[currentRole].prev`    # same as above but only when direction backward
-  * `before`                        # fired after leaving, when transition is allowed
-  * `before.[nextRole]`             # role of the up comming slide
-  * `before.[nextRole].next`        # same as above but only when direction forward
-  * `before.[nextRole].prev`    # same as above but only when direction backward
-  * `after`                         # fired after the transition
-  * `after.[currentRole]`           # role of the current slide
-  * `after.[currentRole].next`        # same as above but only when direction forward
+  * `ready`                       # fired when slider is ready
+  * `resize`                      # fired when page is resized
+  * `first-interaction`           # fired after first transition
+  * `leaving`                     # fired before going to the next slide, can stop transition
+  * `leaving.[currentRole]`       # currentRole it the role of the slide, a plugin can listen only listen for `leaving.zipcode`
+  * `leaving.[currentRole].next`  # same as above but only when direction forward
+  * `leaving.[currentRole].prev`  # same as above but only when direction backward
+  * `before`                      # fired after leaving, when transition is allowed
+  * `before.[nextRole]`           # role of the up comming slide
+  * `before.[nextRole].next`      # same as above but only when direction forward
+  * `before.[nextRole].prev`      # same as above but only when direction backward
+  * `after`                       # fired after the transition
+  * `after.[currentRole]`         # role of the current slide
+  * `after.[currentRole].next`    # same as above but only when direction forward
   * `after.[currentRole].prev`    # same as above but only when direction backward
 ```
 
