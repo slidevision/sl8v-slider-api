@@ -1,29 +1,10 @@
 # sl8v-slider-api
 This api is bundled with every slider you load from slidevision and provides easy access for developer to interact with your SlideVision slider.
 
-## Initial Loading
-##### sl8v_on_before_loading()
-##### sl8v_on_slider_ready()
+If you dont know what a SlideVision slider is you cann find more information on [https://slidevision.io](https://slidevision.io/).
 
-## sl8v.api
-##### sl8v.api.version
-##### sl8v.api.container()
-##### sl8v.api.slides()
+If you need support with you SlideVision slider contact us via support@slidevision.io.
 
-### sl8v.api.transport
-##### sl8v.api.transport.index()
-##### sl8v.api.transport.count()
-##### sl8v.api.transport.next()
-##### sl8v.api.transport.prev()
-##### sl8v.api.transport.goto(indexFromZero=null)
-##### sl8v.api.transport.gotoId(slideId)
-
-
-### sl8v.api.plugins
-##### sl8v.api.plugins.get(name)
-##### sl8v.api.plugins.getTracking()
-##### sl8v.api.plugins.getFormSubmission()
-##### sl8v.api.plugins.getSubmissionData()
-
-### sl8v.api.events
-##### sl8v.api.events.on(eventName, callback)
+### Developer Resources
+* [docs/API.md](docs/API.md)
+* [docs/CHANGELOG.md](docs/CHANGELOG.md)
