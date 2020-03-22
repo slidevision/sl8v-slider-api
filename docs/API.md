@@ -19,15 +19,15 @@ $(document).on('ready.formslider', '.slidevision-formslider', function(){
 
 ## sl8v.api
 #### sl8v.api.version
-Current version of the sl8v slider api.
+* Current version of the sl8v slider api.
 
 #### sl8v.api.container()
-The container the SlideVision slider is initialized on.
+* The container the SlideVision slider is initialized on.
 
-Most the time is `$('.slidevision-formslider')`.
+* Most the time is `$('.slidevision-formslider')`.
 
 #### sl8v.api.slides()
-This method returns object of the slides with the index as key and the div as value.
+* This method returns object of the slides with the index as key and the div as value.
 
 You can iterate over the  slides by doing the following:
 ```javascript
@@ -38,8 +38,7 @@ $(sl8v.api.slides()).each(function(index, slide){
 ```
 
 #### sl8v.api.url(input)
-This is a proxy method to the `js-url` api to access url parameters.
-* https://github.com/websanova/js-url
+* This is a proxy method to the [js-url](https://github.com/websanova/js-url) api to access url parameters.
 
 ### sl8v.api.transport
 #### sl8v.api.transport.index()
