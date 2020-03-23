@@ -23,13 +23,10 @@ window.sl8v.api =
       window.sl8v.api.transport.gotoId(id)  if id    = sl8v.api.url('?sl8v-goto-id')
 
   events:
-    # name: name[.tag1.tag2][.context]
-    on:  (name, callback, context) ->
-      context = context || 'global'
+    on:  (name, callback, context = 'global') ->
       window.sl8v.formslider.events.on("#{name}.#{context}", callback)
 
-    off: (name, context)           ->
-      context = context || 'global'
+    off: (name, context = 'global') ->
       window.sl8v.formslider.events.off("#{name}.#{context}")
 
     _onReady: ->
