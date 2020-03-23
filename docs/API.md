@@ -18,6 +18,11 @@ $(document).on('ready.formslider', '.slidevision-formslider', function(){
 });
 ```
 
+## Url Dispatcher
+There are two parameters that can control wich slide the user sees at the beginning:
+* `sl8v-goto-index=[indexFromZero]` loads a certain slide by index
+* `sl8v-goto-id=[slideId]` loads a certain slide by slideId
+
 ## sl8v.api
 #### sl8v.api.version
 * Current version of the sl8v slider api.
