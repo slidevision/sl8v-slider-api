@@ -72,7 +72,7 @@ $(sl8v.api.slides()).each(function(index, slide){
 * Returns a plugin loaded from the SlideVision slider or undefined if not loaded.
 
 ## sl8v.api.submission
-#### sl8v.api.submission.get(key, fallback = undefined)
+#### sl8v.api.submission.get(key = null, fallback = undefined)
 * Returns all or a certain value of the lead data that gets submitted.
 
 * If you specify a `key` and key is not in the store the `fallback` value will be returned.
@@ -102,7 +102,7 @@ $(sl8v.api.slides()).each(function(index, slide){
   * `leaving.question`
   * `question.leaving`
 
-#### sl8v.api.events.on(name, callback, context='global')
+#### sl8v.api.events.on(name, callback, context = 'global')
 * Registers an event listener.
 
 * The `name` parameter has the following semantic: `name[.tag1.tag2.tag3]`
@@ -126,7 +126,7 @@ Possible pre define event names in chronoloical order:
   * `after.[currentRole].prev`    # same as above but only when direction backward
 ```
 
-#### sl8v.api.events.off(name, context='global')
+#### sl8v.api.events.off(name, context = 'global')
 * Deregister an event listener.
 
 *  The `name` parameter has the following semantic: `name[.tag1.tag2.tag3]`
