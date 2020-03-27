@@ -31,12 +31,13 @@ window.sl8v.api =
 
     _onReady: ->
       window.sl8v.api.transport._dispatchUrl()
-      if Sl8vLeadUuid && !window.leadUuid
+      if window.Sl8vLeadUuid && !window.leadUuid
         window.leadUuid                 = new Sl8vLeadUuid()
         window.trackingUuid             = new Sl8vTrackingUuid()
         window.trackingEntranceUrl      = new Sl8vTrackingEntranceUrl()
         window.trackingEntranceRefferer = new Sl8vTrackingEntranceRefferer()
 
+      window.sl8v.formslider.events.trigger('api.ready.formslider')
       window.sl8v_on_slider_ready() if 'sl8v_on_slider_ready' of window
 
     _onBeforeLoading: ->
