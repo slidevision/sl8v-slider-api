@@ -54,9 +54,10 @@ window.sl8v.api =
   submission:
     inject: (name, value, triggerTrackEvent = false) ->
       trackerPlugin = window.sl8v.api.plugins.get('TrackSessionInformation')
-      return trackerPlugin.inform(name, value, triggerTrackEvent) if trackerPlugin
-      console.warn('sl8v: missing TrackSessionInformation plugin')
-      false
+      trackerPlugin.inform(name, value, triggerTrackEvent)
+
+      replacePlugin = window.sl8v.api.plugins.get('ContentReplace')
+      replacePlugin.config.mappings["{{#{name}}}"] = value
 
     get: (key, fallback = undefined) ->
       submitter = window.sl8v.api.plugins._getFormSubmitter()
