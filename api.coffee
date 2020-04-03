@@ -1,6 +1,6 @@
 window.sl8v = window.sl8v || {}
 window.sl8v.api =
-  version: '1.1'
+  version: '1.2'
   container: -> window.sl8v.formslider.container
   slides:    -> window.sl8v.formslider.slides
   url: (input) ->
