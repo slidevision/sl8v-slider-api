@@ -1,5 +1,8 @@
 # Changelog
 
+##### 1.3
+* fix error when COntentReplacePlugin not loaded
+
 ##### 1.2
 * add injected submission data also to content replace plugin
 

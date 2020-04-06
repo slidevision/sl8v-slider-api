@@ -1,6 +1,6 @@
 window.sl8v = window.sl8v || {}
 window.sl8v.api =
-  version: '1.2'
+  version: '1.3'
   container: -> window.sl8v.formslider.container
   slides:    -> window.sl8v.formslider.slides
   url: (input) ->
@@ -57,7 +57,7 @@ window.sl8v.api =
       trackerPlugin.inform(name, value, triggerTrackEvent)
 
       replacePlugin = window.sl8v.api.plugins.get('ContentReplace')
-      replacePlugin.config.mappings["{{#{name}}}"] = value
+      replacePlugin.config.mappings["{{#{name}}}"] = value if replacePlugin
 
     get: (key, fallback = undefined) ->
       submitter = window.sl8v.api.plugins._getFormSubmitter()
