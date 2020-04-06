@@ -3,7 +3,7 @@ This api is bundled with every slider you load from cdn.slidevision.io and provi
 
 ## Initial Loading
 #### sl8v_on_before_loading()
-If the method `sl8v_on_before_loading` is defined in the context of `window` this method will be called 
+If the method `sl8v_on_before_loading` is defined in the context of `window` this method will be called
 * before the SlideVision slider gets initialized
 
 #### sl8v_on_slider_ready()
@@ -15,6 +15,13 @@ If you want to listen by your own you can do:
 ```javascript
 $(document).on('ready.formslider', '.slidevision-formslider', function(){
   console.log('SlideVision slider is ready');
+});
+```
+
+Or if you want to wait until the api is loaded complete:
+```javascript
+$(document).on('api.ready.formslider', '.slidevision-formslider', function(){
+  console.log('SlideVision slider-api is ready');
 });
 ```
 
