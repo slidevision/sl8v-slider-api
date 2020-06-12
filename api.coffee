@@ -5,13 +5,16 @@ window.sl8v.api =
   slides:    -> window.sl8v.formslider.slides
   url: (input) ->
     return jQuery.url(input) if jQuery.url
+    console.error('sl8v.api: js-url not laoded')
 
   cookie:
     get: (name=null) ->
-      return Cookies.get(name)
+      return Cookies.get(name) if Cookies
+      console.error('sl8v.api: js-ccokies not laoded')
 
     set: (name, value, options={}) ->
-      Cookies.set(name, value, options)
+      return Cookies.set(name, value, options) if Cookies
+      console.error('sl8v.api: js-ccokies not laoded')
 
   transport:
     index: -> window.sl8v.formslider.index()
@@ -56,7 +59,7 @@ window.sl8v.api =
     _getFormSubmitter: ->
       plugin = window.sl8v.api.plugins.get('FormSubmission')
       return plugin.submitter if plugin
-      console.warn('sl8v: missing FormSubmission plugin')
+      console.warn('sl8v.api: missing FormSubmission plugin')
       false
 
   submission:
