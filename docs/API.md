@@ -53,6 +53,11 @@ $(sl8v.api.slides()).each(function(index, slide){
 #### sl8v.api.url(input)
 * This is a proxy method to the [js-url](https://github.com/websanova/js-url) api to access url parameters.
 
+#### sl8v.api.cookie.get(name)
+* This is a proxy method to the [js-cookie](https://github.com/js-cookie/js-cookie) api to get cookies.
+
+#### sl8v.api.cookie.set(name, value, options={})
+* This is a proxy method to the [js-cookie](https://github.com/js-cookie/js-cookie) api to set cookies.
 
 ## sl8v.api.transport
 #### sl8v.api.transport.index()

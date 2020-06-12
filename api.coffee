@@ -1,10 +1,17 @@
 window.sl8v = window.sl8v || {}
 window.sl8v.api =
-  version: '1.3'
+  version: '1.4'
   container: -> window.sl8v.formslider.container
   slides:    -> window.sl8v.formslider.slides
   url: (input) ->
     return jQuery.url(input) if jQuery.url
+
+  cookie:
+    get: (name=null) ->
+      return Cookies.get(name)
+
+    set: (name, value, options={}) ->
+      Cookies.set(name, value, options)
 
   transport:
     index: -> window.sl8v.formslider.index()
