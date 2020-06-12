@@ -38,6 +38,7 @@ window.sl8v.api =
         window.trackingEntranceRefferer = new Sl8vTrackingEntranceRefferer()
 
       window.sl8v.formslider.events.trigger('api.ready.formslider')
+      window.sl8v.formslider.container.trigger('api.ready.formslider')
       window.sl8v_on_slider_ready() if 'sl8v_on_slider_ready' of window
 
     _onBeforeLoading: ->
