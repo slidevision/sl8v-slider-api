@@ -40,7 +40,9 @@ window.sl8v.api =
       window.sl8v.formslider.events.off("#{name}.#{context}")
 
     _onReady: ->
+      console.log('api.ready.formslider') if console
       window.sl8v.api.transport._dispatchUrl()
+
       if window.Sl8vLeadUuid && !window.leadUuid
         window.leadUuid                 = new Sl8vLeadUuid()
         window.trackingUuid             = new Sl8vTrackingUuid()
@@ -78,7 +80,5 @@ window.sl8v.api =
       return inputs unless key
       return fallback unless key of inputs
       inputs[key]
-
-$(document).on('ready.formslider', '.slidevision-formslider', window.sl8v.api.events._onReady)
 
 window.sl8v.api.events._onBeforeLoading()
