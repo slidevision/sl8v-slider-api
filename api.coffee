@@ -3,8 +3,8 @@ window.sl8v.api =
   version: '1.4'
   container: -> window.sl8v.formslider.container
   slides:    -> window.sl8v.formslider.slides
-  url: (input) ->
-    return jQuery.url(input) if jQuery.url
+  url: (input, src) ->
+    return jQuery.url(input, src) if jQuery.url
     console.error('sl8v.api: js-url not laoded')
 
   cookie:
